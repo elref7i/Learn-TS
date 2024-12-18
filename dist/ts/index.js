@@ -15,4 +15,15 @@ let numbers = [10, 20, 30, 40, 50];
 let employee = [22, 'Ahmed Khaled'];
 let userAge = 10;
 userAge = 'ten';
+//* User Defined Types - Tuples
+///!   لازم ترتيب -لازم تعمل شكل معين وعدد معين
+//^ >===> ["corlla","Toyota",500000]
+const car = ['corlla', 'Toyota', 500000];
+//* Hint 📌
+//& ====> readonly ==> Not Change
+// car.push(true); // *==> error (Boolean)
+// car.push(10);
+// console.log(car); // ~==> OutPut =>  ['corlla', 'Toyota', 500000, 10]
+//! Error ❌
+// const car2: [string, string, number] = ['corlla', 'Toyota'];
 //# sourceMappingURL=index.js.map

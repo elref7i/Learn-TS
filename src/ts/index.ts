@@ -26,3 +26,21 @@ let employee: (number | string)[] = [22, 'Ahmed Khaled'];
 
 let userAge: number | string = 10;
 userAge = 'ten';
+
+//* User Defined Types - Tuples
+///!   لازم ترتيب -لازم تعمل شكل معين وعدد معين
+
+//^ >===> ["corlla","Toyota",500000]
+
+const car: readonly [string, string, number] = ['corlla', 'Toyota', 500000];
+
+//* Hint 📌
+
+//& ====> readonly ==> Not Change
+// car.push(true); // *==> error (Boolean)
+
+// car.push(10);
+// console.log(car); // ~==> OutPut =>  ['corlla', 'Toyota', 500000, 10]
+
+//! Error ❌
+// const car2: [string, string, number] = ['corlla', 'Toyota'];
