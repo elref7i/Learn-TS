@@ -169,3 +169,33 @@ const CarFiveData: CarInfoExtend = {
     branchOne: 'Bagour',
   },
 };
+
+//*[6] function Parameters and Return Types
+
+//^ Emplist Return ==> void => no return
+
+function calc(num1: number, num2: number): void {
+  console.log(num1 + num2);
+}
+calc(10, 10);
+
+function calcTwo(num3: number, num4: number): number {
+  return num3 + num4;
+}
+calcTwo(10, 10);
+
+//* user Defined error
+
+//^  after throw  ===> unreachable code detected ==> never return
+
+function showError(msg: string): never {
+  throw new Error(msg);
+}
+
+//^ "noUnusedParameters": true,
+
+/* function test(num3: number, num4: number, num5: number): number {
+  return num3 + num4;
+}
+test(10, 10, 20);
+ */
