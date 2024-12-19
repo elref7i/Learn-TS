@@ -184,7 +184,7 @@ function calcTwo(num3: number, num4: number): number {
 }
 calcTwo(10, 10);
 
-//* user Defined error
+//! user Defined error
 
 //^  after throw  ===> unreachable code detected ==> never return
 
@@ -199,3 +199,22 @@ function showError(msg: string): never {
 }
 test(10, 10, 20);
  */
+
+//*[7] Special Types in TS - Any and Unknown
+
+let str1: any = 'any';
+str1.push(); //! ❌ no type Safety
+
+let str2: unknown = 'unknown';
+
+// str2.PushManager(); //* ✅ no type Safety
+
+if (typeof str2 === 'number') {
+  str2.toFixed();
+}
+if (typeof str2 === 'string') {
+  str2.toLowerCase();
+}
+if (Array.isArray(str2)) {
+  str2.push();
+}
