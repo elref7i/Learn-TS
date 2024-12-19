@@ -21,4 +21,56 @@ userAge = 'ten';
 const car = ['corlla', 'Toyota', 500000];
 const arr = ['refai', 22, false];
 const arr2 = ['ahmed', 21, true];
+const carData = {
+    name: 'Toyota-type',
+    color: 'Red',
+    price: 500000,
+    hasAirBag: true,
+    brances: {
+        branchOne: 'cairo',
+        branchTwo: 'giza',
+    },
+};
+const carTwoData = {
+    name: 'Toyota-type',
+    color: 'White',
+    price: 750000,
+    hasAirBag: false,
+    brances: {
+        branchOne: 'Bagour',
+        branchTwo: 'Dokki',
+    },
+};
+//*  *---------------* Class ===> مبقتش مستخدمه
+class CarTwo {
+    constructor() {
+        this.name = '';
+        this.color = '';
+        this.hasAirBag = false;
+        this.price = 0;
+        this.branches = {
+            branchOne: '',
+            branchTwo: '',
+        };
+    }
+}
+const CarThreeData = {
+    name: 'Toyota-class',
+    color: 'White',
+    price: 750000,
+    hasAirBag: false,
+    branches: {
+        branchOne: 'Bagour',
+        branchTwo: 'Dokki',
+    },
+};
+const CarFourData = {
+    name: 'Toyota-interface',
+    color: 'White',
+    price: 750000,
+    hasAirBag: false,
+    branches: {
+        branchOne: 'Bagour',
+    },
+};
 //# sourceMappingURL=index.js.map
