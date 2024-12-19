@@ -170,7 +170,7 @@ const CarFiveData: CarInfoExtend = {
   },
 };
 
-//*[6] function Parameters and Return Types
+//*[6] function Parameters and Return Types :
 
 //^ Emplist Return ==> void => no return
 
@@ -200,7 +200,7 @@ function showError(msg: string): never {
 test(10, 10, 20);
  */
 
-//*[7] Special Types in TS - Any and Unknown
+//*[7] Special Types in TS - Any and Unknown :
 
 let str1: any = 'any';
 str1.push(); //! ❌ no type Safety
@@ -218,3 +218,5 @@ if (typeof str2 === 'string') {
 if (Array.isArray(str2)) {
   str2.push();
 }
+
+//*[8] Generics ===>
