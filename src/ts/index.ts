@@ -1,5 +1,7 @@
 // *[1] Built-in Types =>String ,number ,Boolean , null , undefined :
 
+import { log } from 'console';
+
 let userName: string = 'refai';
 
 userName = 'ahmed refai';
@@ -220,3 +222,36 @@ if (Array.isArray(str2)) {
 }
 
 //*[8] Generics ===>
+
+function reverseNumber(arr: number[]): number[] {
+  let result: number[] = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i]);
+  }
+  return result;
+}
+
+console.log(reverseNumber([1, 2, 3]));
+
+function reverseString(arr: string[]): string[] {
+  let result: string[] = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i]);
+  }
+  return result;
+}
+
+console.log(reverseString(['1', '2', '3']));
+
+// ? ===> Generics
+
+function generics<Type>(arr: Type[]): Type[] {
+  let result: Type[] = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i]);
+  }
+  return result;
+}
+
+console.log(generics<string>(['1', '2', '3']));
+console.log(generics<number>([1, 2, 3]));
